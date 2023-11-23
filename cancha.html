@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cancha Sinteticas</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilos1.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/cancha.js"></script>
+  </head>
+
+  <body background="assets/images/bg4.jpg">
+     <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <h1 class="section-title">SISTEMA DE RESERVAS DE CANCHAS SINTETICAS</h1>
+        </div>
+        <div class="row">
+          <div id="menu1" class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <div class="about-text">
+                <h3><a>Consultar Disponibilidad de canchas sinteticas</a></h3>
+                <p>Aca podras consultar las disponibilidades de las canchas y las horas</p>
+                <a class="btn btn-common btn-rm" href="#" onclick="app.mostrarcanchas();">Consultar</a>
+              </div>
+            </div>
+          </div>
+          <div id="menu2" class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <div class="about-text">
+                <h3><a>Consultar si ya realizastes tu reserva</a></h3>
+                <p>Consulte sus reservas con tu correo registrado</p>
+                <input id="docConsulta" class="mb-20 form-control" name="cedula" placeholder="Ingrese Su Cedula">
+                <a class="btn btn-common btn-rm" href="#" onclick="app.consultarReserva();">Consultar</a>
+              </div>
+            </div>
+          </div>
+          <div id="campodoc" style="display: none;">
+            <form action="javascript:void(0);" method="POST" id="reserva-edit">
+              <p id="datosvuelo"></p>
+              <input type="text" id="documento" placeholder="Cedula">
+              <input type="submit" value="Reservar" />
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <table>
+                <tbody id="vuelos"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a id="btnback" style="display: none;" href="#" class="btn btn-common btn-rm" onclick="app.Volver();">Volver</a>
+      </div>
+    </section>
+
+      </div>
+    </div>} 
+  </body>
+</html>
